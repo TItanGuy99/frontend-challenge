@@ -1,0 +1,344 @@
+/* Import the fonts */
+@import url('https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+/* Change the cursor to a hand when it is a button */
+.pointer-cursor {
+  cursor: pointer;
+}
+
+/* Setting the style for the fonts */
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #414C5E;
+}
+
+.list-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #566074;
+}
+
+.list-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  text-align: left;
+  font-size: 16px;
+  color: #778195;
+}
+
+/* Add a custom border */
+
+.addborder {
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* Divide the page in grids */
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: main;
+}
+
+.item3 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header header header header' 'main main main main main main' 'footer footer footer footer footer footer';
+  grid-gap: 0px;
+  background-color: #F2F2F2;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.grid-container>div {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Divide the items inside the main grid in another grid */
+
+.sub-grid-container {
+  display: grid;
+  grid-template-areas: 'col-1 col-2 col-3 col-4 col-5 col-6 col-7 col-8  col-9 col-10 col-11';
+  grid-gap: 0px;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.sub-grid-container>div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  text-align: left;
+
+}
+
+.subitem1 {
+  grid-area: col-1;
+}
+
+.subitem2 {
+  grid-area: col-2;
+}
+
+.subitem3 {
+  grid-area: col-3;
+}
+
+.subitem4 {
+  grid-area: col-4;
+}
+
+.subitem5 {
+  grid-area: col-5;
+}
+
+.subitem6 {
+  grid-area: col-6;
+}
+
+.subitem7 {
+  grid-area: col-7;
+}
+
+.subitem8 {
+  grid-area: col-8;
+}
+
+.subitem9 {
+  grid-area: col-9;
+}
+
+.subitem10 {
+  grid-area: col-10;
+}
+
+.subitem11 {
+  grid-area: col-11;
+}
+
+/* A grid for our list of objects */
+
+.list-grid-container {
+  display: grid;
+  grid-template-areas: 'list-col-1 list-col-2 list-col-3 list-col-4 list-col-4 list-col-4 list-col-4 list-col-5 list-col-6 list-col-7';
+  grid-gap: 0px;
+  background-color: #F2F2F2;
+  padding-top: 5px;
+}
+
+.list-grid-container>div {
+  text-align: center;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 30px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px;
+
+}
+
+.listitem1 {
+  grid-area: list-col-1;
+  background-color: #F2F2F2;
+}
+
+.listitem2 {
+  grid-area: list-col-2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem3 {
+  grid-area: list-col-3;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem4 {
+  grid-area: list-col-4;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem5 {
+  grid-area: list-col-5;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem6 {
+  grid-area: list-col-6;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem7 {
+  grid-area: list-col-7;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.listitem8 {
+  grid-area: list-col-8;
+  background-color: #F2F2F2;
+}
+
+/* Some custom alignment */
+
+.alignment-center {
+  text-align: center;
+}
+
+.alignment-left {
+  text-align: left;
+}
+
+.alignment-right {
+  text-align: right;
+}
+
+.left_header {
+  min-width: 55px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 30px;
+}
+
+.right_header {
+  float:right;
+}
+
+/* Define a background color to grey */
+
+.col-color-grey {
+  background-color: #F2F2F2;
+}
+
+/* CSS for the bin hover */
+
+.hidden {
+  display: none;
+}
+
+.parent:hover .hidden {
+  display: block;
+}
+
+.padding-bin{
+  padding-right: 5px;
+}
+
+
+/* Define our customized checkbox */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkWidth {
+  width: 50px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 10%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(133, 158, 255, 2);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(133, 158, 255, 2);
+  box-shadow: 0px 0px 0px 1px rgba(133, 158, 255, 2);
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #859EFF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+
+}
+
+.container .checkmark:after {
+  left: 2px;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* Reset the size of the input fonts */
+
+.reset-font {
+  font-size: 0px;
+}
+
+p {
+  margin: 13px;
+  padding: 0;
+  width: 260px;
+  white-space: normal;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* Personalizing some HTML elements */
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+input {
+  border-radius: 4px;
+}
