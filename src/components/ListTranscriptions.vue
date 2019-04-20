@@ -45,7 +45,7 @@
           </div>
 
           <div class="listitem5">
-            <button v-on:click="updateTranscription(transcription)">save</button>
+            <button class="pointer-cursor" v-on:click="updateTranscription(transcription)">save</button>
           </div>
         </div>
 
@@ -105,7 +105,7 @@
         </div>
 
         <div class="listitem5">
-          <button v-on:click="addTranscription(transcriptionVoice, transcriptionText)">save</button>
+          <button class="pointer-cursor" v-on:click="addTranscription(transcriptionVoice, transcriptionText)">save</button>
         </div>
       </div>
 
