@@ -27,7 +27,7 @@
       <div
         class="hidden pointer-cursor padding-bin alignment-right"
         v-on:click="$emit('deleteTranscription')">
-        <img alt="Delete" src="../assets/images/delete@1x.png">&nbsp;
+        <img alt="Delete" src="../assets/images/delete.svg">&nbsp;
       </div>
     </div>
   </div>

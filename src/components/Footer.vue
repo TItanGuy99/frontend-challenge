@@ -1,7 +1,7 @@
 <template>
   <div class="sub-grid-container col-color-grey">
     <div v-on:click="$emit('newTranscription')" class="subitem7 pointer-cursor">
-      <img alt="Add a new row" src="../assets/images/add-row@1x.png">
+      <img alt="Add a new row" src="../assets/images/add-row.svg">
     </div>
   </div>
 </template>

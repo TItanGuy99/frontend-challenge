@@ -10,8 +10,3 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
-
-# run the jsonserver at http://localhost:3000/data
-cd src
-cd JsonServer
-json-server --watch db.json

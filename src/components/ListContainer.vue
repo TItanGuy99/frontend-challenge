@@ -61,8 +61,7 @@ export default {
     return {
       editTranscription: null,
       newTranscription: false,
-      transcriptions: [],
-      person_icon_img: "../assets/images/fetch-document@2x.png"
+      transcriptions: []
     };
   },
   components: {
@@ -76,7 +75,7 @@ export default {
     showTranscriptions() {
       /* Load the Json from the server and feed the local array */
       axios
-        .get("http://localhost:3000/data/")
+        .get("http://www.mocky.io/v2/5ae1c5792d00004d009d7e5c")
         .then(response => (response = response.data))
         .then(mydata => {
           this.transcriptions = mydata;
@@ -95,7 +94,7 @@ export default {
     sendTranscriptions(transcriptions) {
     /* Send the Data */
       axios
-        .post("http://localhost:3000/data/", transcriptions, {
+        .post("http://www.mocky.io/v2/5ae1c5792d00004d009d7e5c", transcriptions, {
           headers: {
             "Content-type": "application/json"
           }
