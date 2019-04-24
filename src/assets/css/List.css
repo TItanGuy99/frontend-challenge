@@ -240,6 +240,18 @@
 
 /* Define our customized checkbox */
 
+.left-box{
+  width:30%;
+  margin-top: 13px;
+  padding-left:20px;
+  float: left;
+}
+.right-box {
+  width:10%;
+  margin-top: 8px;
+  float: left;
+}
+
 .container {
   display: block;
   position: relative;

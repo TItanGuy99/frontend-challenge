@@ -149,7 +149,7 @@ export default {
         transcriptionText = "My Content";
       }
 
-      for (var i = 0; i < this.transcriptions.length; i++) {
+      for (let i = 0; i < this.transcriptions.length; i++) {
         if (this.transcriptions[i].id === id) {
           this.transcriptions[i].voice = transcriptionVoice;
           this.transcriptions[i].text = transcriptionText;

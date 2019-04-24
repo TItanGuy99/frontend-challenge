@@ -1,13 +1,13 @@
 <template>
   <div  class="list-grid-container">
     <div class="listitem3">
-      <div class="left_header">
+      <div class="left-box">
         <label class="container">
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
       </div>
-      <div class="right_header reset-font">
+      <div class="right-box">
         <img alt="List Icon" src="../assets/images/person.svg">
       </div>
     </div>
